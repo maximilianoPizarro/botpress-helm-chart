@@ -60,8 +60,10 @@ Se verifico el funcionamiento en <a href="https://developers.redhat.com/develope
 </ol>
 
 <a> Package Info </a>
-helm package . -d .
-helm repo index .
+<ol>
+<li>helm package . -d . </li>
+<li>helm repo index .</li>
+<ol>
 </p>
 
 <a href="https://github.com/maximilianoPizarro/botpress-helm">https://github.com/maximilianoPizarro/botpress-helm</a>
