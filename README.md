@@ -16,19 +16,53 @@
 El propósito de este proyecto consiste en generar los objetos kubernetes en base a la imagen del nodo del repositorio oficial <a href="https://botpress.com">botpress</a> para el despliegue sobre las plataformas de contenedores por medio de la estrategía Helm Charts.
 
 Se verifico el funcionamiento en <a href="https://developers.redhat.com/developer-sandbox">Sandbox RedHat OpenShift Dedicated</a> (Openshift 4.14.1).
+</p>
 
-</p>  
-<a> Instalación local</a>
+<table>
+  <caption>
+    Charts Values Parameters
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">Parameter</th>
+      <th scope="col">Value</th>
+      <th scope="col">Default</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">env.EXTERNAL_URL</th>
+      <td>https://my-botpress-<NAMESPACE>-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com</td>
+      <td>https://botpress-server-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com</td>
+    </tr>
+    <tr>
+      <th scope="row">route.host</th>
+      <td>my-botpress-<NAMESPACE>-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com</td>
+      <td>botpress-server-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com</td>
+    </tr>
+    <tr>
+      <th scope="row">image.repository</th>
+      <td>botpress/server</td> <td>quay.io/maximilianopizarro/botpress-server-v12</td>
+    </tr>
+  </tbody>
+</table>
+
+<a> Add repository and Install</a>
 <p>
 <ol>
- <li>Run helm install command from web terminal on Red Hat OpenShift Dedicated: <b>helm install botpress-server .</b></li>
- <li>Package: <b>helm package . -d charts/ & helm repo index charts/ </b></li>
+ <li><b>helm repo add botpress https://maximilianopizarro.github.io/botpress-helm/</b></li>
+ <li><b>helm install my-botpress botpress/botpress --version 0.1.0 --set route.host=<Your-WilcardDNS>,env.EXTERNAL_URL=<Your-WilcardDNS></b></li>
 </ol>
 <br>
-<a> Desinstalar </a>
+<a> Uninstall </a>
 <ol>
 <li>helm uninstall botpress-server </li>
 </ol>
+
+<a> Package Info </a>
+helm package . -d .
+helm repo index .
 </p>
 
-<a href="https://github.com/maximilianoPizarro/botpress-helm">Repo GitHub</a>
+<a href="https://github.com/maximilianoPizarro/botpress-helm">https://github.com/maximilianoPizarro/botpress-helm</a>
+
