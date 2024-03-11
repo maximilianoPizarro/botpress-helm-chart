@@ -12,8 +12,7 @@
 <h1> What is Botpress? </h1>
 <p align="left">
 Botpress is the standard developer stack to build, run, and improve conversational AI applications. Powered by natural language understanding, a messaging API, and a fully featured studio, Botpress allows developers and conversation designers around the globe to build remarkable chatbots without compromise.
-
-<a href='https://botpress.com/?utm_source=github&utm_medium=organic&utm_campaign=botpress_repo&utm_term=readme'><img src='.github/assets/studio.png'></a>
+<img src="https://raw.githubusercontent.com/maximilianoPizarro/botpress-server-v12/master/.github/assets/studio.png" width="900" title="Run On Openshift"> 
 
 </p>
 
@@ -62,8 +61,7 @@ Se verifico el funcionamiento en <a href="https://developers.redhat.com/develope
 </table>
 </p>
 <br>
-<h1> Add repository and Install</h1>
-<a href="https://maximilianopizarro.github.io/botpress-helm/">https://maximilianopizarro.github.io/botpress-helm/</a>
+<h1> Add repository and install</h1>
 <p>
 <ol>
  <li><b>helm repo add botpress https://maximilianopizarro.github.io/botpress-helm/</b></li>
@@ -77,7 +75,7 @@ Se verifico el funcionamiento en <a href="https://developers.redhat.com/develope
 </ol>
 
 <h1> Package Info </h1>
-
+<a href="https://maximilianopizarro.github.io/botpress-helm/">https://maximilianopizarro.github.io/botpress-helm/</a>
 <a href="https://github.com/maximilianoPizarro/botpress-helm">https://github.com/maximilianoPizarro/botpress-helm</a>
 
 <ol>
