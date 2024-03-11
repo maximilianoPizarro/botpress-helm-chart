@@ -32,12 +32,12 @@ Se verifico el funcionamiento en <a href="https://developers.redhat.com/develope
   <tbody>
     <tr>
       <th scope="row">env.EXTERNAL_URL</th>
-      <td>https://my-botpress-<NAMESPACE>-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com</td>
+      <td>https://my-botpress-NAMESPACE-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com</td>
       <td>https://botpress-server-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com</td>
     </tr>
     <tr>
       <th scope="row">route.host</th>
-      <td>my-botpress-<NAMESPACE>-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com</td>
+      <td>my-botpress-NAMESPACE-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com</td>
       <td>botpress-server-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com</td>
     </tr>
     <tr>
@@ -51,7 +51,7 @@ Se verifico el funcionamiento en <a href="https://developers.redhat.com/develope
 <p>
 <ol>
  <li><b>helm repo add botpress https://maximilianopizarro.github.io/botpress-helm/</b></li>
- <li><b>helm install my-botpress botpress/botpress --version 0.1.0 --set route.host=<Your-WilcardDNS>,env.EXTERNAL_URL=<Your-WilcardDNS></b></li>
+ <li><b>helm install my-botpress botpress/botpress --version 0.1.0 --set route.host="Your-WilcardDNS-hostname",env.EXTERNAL_URL="Your-WilcardDNS-with-https"</b></li>
 </ol>
 <br>
 <a> Uninstall </a>
