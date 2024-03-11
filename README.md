@@ -13,19 +13,19 @@
   <img src="https://github.com/maximilianoPizarro/botpress-server-v12/blob/master/examples/image/Captura7.PNG?raw=true" width="684" title="Run On Openshift">
   <img src="https://github.com/maximilianoPizarro/botpress-server-v12/blob/master/examples/image/Captura8.PNG?raw=true" width="684" title="Run On Openshift">  
 <br>
-El propósito de este proyecto consiste en generar los objetos kubernetes en base a la imagen del nodo del repositorio oficial [botpress](https://botpress.com) para el despliegue sobre las plataformas de contenedores por medio Helm Charts.
+El propósito de este proyecto consiste en generar los objetos kubernetes en base a la imagen del nodo del repositorio oficial <a href="https://botpress.com">botpress</a> para el despliegue sobre las plataformas de contenedores por medio de la estrategía Helm Charts.
 
 Se verifico el funcionamiento en <a href="https://developers.redhat.com/developer-sandbox">Sandbox RedHat OpenShift Dedicated</a> (Openshift 4.14.1).
 
 </p>  
-<a> Install </a>
+<a> Instalación local</a>
 <p>
 <ol>
- <li>Run helm install command from web terminal on Red Hat OpenShift Dedicated: helm install botpress-server .</li>
- <li>Package: helm package . -d charts/ & helm repo index charts/ </li>
+ <li>Run helm install command from web terminal on Red Hat OpenShift Dedicated: <b>helm install botpress-server .</b></li>
+ <li>Package: <b>helm package . -d charts/ & helm repo index charts/ </b></li>
 </ol>
 <br>
-<a> Uninstall </a>
+<a> Desinstalar </a>
 <ol>
 <li>helm uninstall botpress-server </li>
 </ol>
