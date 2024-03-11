@@ -1,4 +1,4 @@
-# Deploy Botpress Server Community Helm Charts on Red Hat OpenShift Dedicated
+# Deploy Botpress Server Community Helm Charts on Red Hat OpenShift
 <p align="left">
 <img src="https://img.shields.io/badge/redhat-CC0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Redhat">
 <img src="https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white" alt="kubernetes">
@@ -8,11 +8,12 @@
 </p>
 
 <p align="left">
-  <img src="https://raw.githubusercontent.com/maximilianoPizarro/botpress-server-v12/master/examples/image/botpress-helm.PNG" width="684" title="Run On Openshift">
+  <img src="https://raw.githubusercontent.com/maximilianoPizarro/botpress-server-v12/master/examples/image/botpress-helm.PNG" width="900" title="Run On Openshift">
+    <img src="https://raw.githubusercontent.com/maximilianoPizarro/botpress-server-v12/master/examples/image/botpress-helm-install.PNG" width="900" title="Run On Openshift">
 </p>
 <p align="left">
-  <img src="https://github.com/maximilianoPizarro/botpress-server-v12/blob/master/examples/image/Captura7.PNG?raw=true" width="684" title="Run On Openshift">
-  <img src="https://github.com/maximilianoPizarro/botpress-server-v12/blob/master/examples/image/Captura8.PNG?raw=true" width="684" title="Run On Openshift">  
+  <img src="https://github.com/maximilianoPizarro/botpress-server-v12/blob/master/examples/image/Captura7.PNG?raw=true" width="900" title="Run On Openshift">
+  <img src="https://github.com/maximilianoPizarro/botpress-server-v12/blob/master/examples/image/Captura8.PNG?raw=true" width="900" title="Run On Openshift">  
 </p>
 <br>
 
@@ -51,6 +52,7 @@ Se verifico el funcionamiento en <a href="https://developers.redhat.com/develope
 </table>
 
 <a> Add repository and Install</a>
+<a href="https://maximilianopizarro.github.io/botpress-helm/">https://maximilianopizarro.github.io/botpress-helm/</a>
 <p>
 <ol>
  <li><b>helm repo add botpress https://maximilianopizarro.github.io/botpress-helm/</b></li>
@@ -64,11 +66,14 @@ Se verifico el funcionamiento en <a href="https://developers.redhat.com/develope
 </ol>
 
 <a> Package Info </a>
+
+<a href="https://github.com/maximilianoPizarro/botpress-helm">https://github.com/maximilianoPizarro/botpress-helm</a>
+
 <ol>
 <li>helm package . -d . </li>
 <li>helm repo index .</li>
 </ol>
 
 
-<a href="https://github.com/maximilianoPizarro/botpress-helm">https://github.com/maximilianoPizarro/botpress-helm</a>
+
 
