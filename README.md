@@ -55,6 +55,7 @@ Se verifico el funcionamiento en <a href="https://developers.redhat.com/develope
 <ol>
  <li><b>helm repo add botpress https://maximilianopizarro.github.io/botpress-helm/</b></li>
  <li><b>helm install my-botpress botpress/botpress --version 0.1.0 --set route.host="Your-WilcardDNS-hostname",env.EXTERNAL_URL="Your-WilcardDNS-with-https"</b></li>
+<li>Example: <b>helm install my-botpress botpress/botpress --version 0.1.0 --set route.host="my-botpress-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com",env.EXTERNAL_URL="https://my-botpress--maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com"</b></li>
 </ol>
 <br>
 <a> Uninstall </a>
