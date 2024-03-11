@@ -96,6 +96,5 @@ Botpress is the standard developer stack to build, run, and improve conversation
 
 </p>
 
-<div class="artifacthub-widget" data-url="https://artifacthub.io/packages/helm/botpress/botpress" data-theme="light" data-header="true" data-stars="true" data-responsive="false"><blockquote><p lang="en" dir="ltr"><b>botpress</b>: A Botpress Community Helm chart for OpenShift</p>&mdash; Open in <a href="https://artifacthub.io/packages/helm/botpress/botpress">Artifact Hub</a></blockquote></div><script async src="https://artifacthub.io/artifacthub-widget.js"></script>
 
 
