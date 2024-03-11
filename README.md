@@ -63,7 +63,7 @@ Se verifico el funcionamiento en <a href="https://developers.redhat.com/develope
 <ol>
 <li>helm package . -d . </li>
 <li>helm repo index .</li>
-<ol>
+</ol>
 </p>
 
 <a href="https://github.com/maximilianoPizarro/botpress-helm">https://github.com/maximilianoPizarro/botpress-helm</a>
