@@ -9,9 +9,6 @@
 <a href="https://artifacthub.io/packages/search?repo=botpress"><img src="https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/botpress" alt="Artifact Hub" /></a>
 </p>
 
-<div class="artifacthub-widget" data-url="https://artifacthub.io/packages/helm/botpress/botpress" data-theme="light" data-header="true" data-stars="true" data-responsive="false"><blockquote><p lang="en" dir="ltr"><b>botpress</b>: A Botpress Community Helm chart for OpenShift</p>&mdash; Open in <a href="https://artifacthub.io/packages/helm/botpress/botpress">Artifact Hub</a></blockquote></div><script async src="https://artifacthub.io/artifacthub-widget.js"></script>
-<p>
-
 <p align="left">
   <img src="https://raw.githubusercontent.com/maximilianoPizarro/botpress-server-v12/master/examples/image/botpress-helm.PNG" width="900" title="Run On Openshift">
     <img src="https://raw.githubusercontent.com/maximilianoPizarro/botpress-server-v12/master/examples/image/botpress-helm-install.PNG" width="900" title="Run On Openshift">
@@ -98,5 +95,7 @@ Botpress is the standard developer stack to build, run, and improve conversation
 <img src="https://raw.githubusercontent.com/maximilianoPizarro/botpress-server-v12/master/.github/assets/studio.png" width="900" title="Run On Openshift"> 
 
 </p>
+
+<div class="artifacthub-widget" data-url="https://artifacthub.io/packages/helm/botpress/botpress" data-theme="light" data-header="true" data-stars="true" data-responsive="false"><blockquote><p lang="en" dir="ltr"><b>botpress</b>: A Botpress Community Helm chart for OpenShift</p>&mdash; Open in <a href="https://artifacthub.io/packages/helm/botpress/botpress">Artifact Hub</a></blockquote></div><script async src="https://artifacthub.io/artifacthub-widget.js"></script>
 
 
