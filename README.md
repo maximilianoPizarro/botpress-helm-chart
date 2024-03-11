@@ -1,7 +1,5 @@
 # Deploy Botpress Server Community Helm Charts on Red Hat OpenShift
-<head>
-<link rel="shortcut icon" href="favicon-152.ico" type="image/x-icon" >
-</head>
+<link rel="shortcut icon" href="https://raw.githubusercontent.com/maximilianoPizarro/botpress-helm/main/favicon-152.ico" type="image/x-icon" >
 <p align="left">
 <img src="https://img.shields.io/badge/redhat-CC0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Redhat">
 <img src="https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white" alt="kubernetes">
