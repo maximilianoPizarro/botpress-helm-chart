@@ -23,6 +23,13 @@ Se verifico el funcionamiento en [Sandbox RedHat OpenShift Dedicated](https://de
 helm install botpress-server .
 ```
 
+2. Package
+```bash
+ helm package . -d charts/
+ helm repo index charts/
+```
+
+
 ## Uninstall
 
 ```bash

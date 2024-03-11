@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  botpress:
+  - apiVersion: v2
+    appVersion: v12
+    created: "2024-03-11T18:11:22.026377765Z"
+    description: A Botpress Community Helm chart for OpenShift
+    digest: 39a37c612ffab9e2972f64c6ee4c364f0917291ad25e384437616e76d7a20f52
+    name: botpress
+    type: application
+    urls:
+    - botpress-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-03-11T18:11:22.025380906Z"
