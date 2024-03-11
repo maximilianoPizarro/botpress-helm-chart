@@ -3,9 +3,9 @@ entries:
   botpress:
   - apiVersion: v2
     appVersion: v12
-    created: "2024-03-11T21:38:55.660956953Z"
+    created: "2024-03-11T22:12:48.349522364Z"
     description: A Botpress Community Helm chart for OpenShift
-    digest: d949ac6fe50195d79bf8c644a9531bb624858f02b6440af5bf219119e04fa290
+    digest: 2db140aab980c64dbc617772b692703d98bbb2be277fdfff242aef64abd24f3a
     name: botpress
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: v12
-    created: "2024-03-11T21:38:55.657948608Z"
+    created: "2024-03-11T22:12:48.345966482Z"
     description: A Botpress Community Helm chart for OpenShift
     digest: c139bfef8be8c9d1c03af675ff64417d31347ddb3fcbe898e37ee2dbe5a48014
     name: botpress
@@ -21,4 +21,4 @@ entries:
     urls:
     - botpress-0.1.0.tgz
     version: 0.1.0
-generated: "2024-03-11T21:38:55.656149285Z"
+generated: "2024-03-11T22:12:48.344119796Z"
