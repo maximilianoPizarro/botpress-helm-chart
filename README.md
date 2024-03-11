@@ -9,6 +9,9 @@
 <a href="https://artifacthub.io/packages/search?repo=botpress"><img src="https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/botpress" alt="Artifact Hub" /></a>
 </p>
 
+<div class="artifacthub-widget" data-url="https://artifacthub.io/packages/helm/botpress/botpress" data-theme="light" data-header="true" data-stars="true" data-responsive="false"><blockquote><p lang="en" dir="ltr"><b>botpress</b>: A Botpress Community Helm chart for OpenShift</p>&mdash; Open in <a href="https://artifacthub.io/packages/helm/botpress/botpress">Artifact Hub</a></blockquote></div><script async src="https://artifacthub.io/artifacthub-widget.js"></script>
+<p>
+
 <p align="left">
   <img src="https://raw.githubusercontent.com/maximilianoPizarro/botpress-server-v12/master/examples/image/botpress-helm.PNG" width="900" title="Run On Openshift">
     <img src="https://raw.githubusercontent.com/maximilianoPizarro/botpress-server-v12/master/examples/image/botpress-helm-install.PNG" width="900" title="Run On Openshift">
@@ -55,16 +58,14 @@ Se verifico el funcionamiento en <a href="https://developers.redhat.com/develope
 </p>
 <br>
 
-<h1> Add repository and install </h1>
+<h1> Add repository and install Chart </h1>
 <p align="left">
 
 <ol>
- <li><b>helm repo add botpress https://maximilianopizarro.github.io/botpress-helm/</b></li>
- <li><b>helm install my-botpress botpress/botpress --version 0.1.0 <b>--set route.host="Your-WilcardDNS-hostname",env.EXTERNAL_URL="Your-WilcardDNS-with-https"</b></li>
-<li>Example: <b>helm install my-botpress botpress/botpress --version 0.1.0 --set route.host="my-botpress-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com",env.EXTERNAL_URL="https://my-botpress--maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com"</b></li>
+ <li>helm repo add botpress <b>https://maximilianopizarro.github.io/botpress-helm/</b></li>
+ <li>helm install my-botpress botpress/botpress --version 0.1.0 <b>--set route.host="Your-WilcardDNS-hostname",env.EXTERNAL_URL="Your-WilcardDNS-with-https"</b></li>
+<li>Example: helm install my-botpress botpress/botpress --version 0.1.0 <b>--set route.host="my-botpress-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com",env.EXTERNAL_URL="https://my-botpress--maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com"</b></li>
 </ol>
-<div class="artifacthub-widget" data-url="https://artifacthub.io/packages/helm/botpress/botpress" data-theme="light" data-header="true" data-stars="true" data-responsive="false"><blockquote><p lang="en" dir="ltr"><b>botpress</b>: A Botpress Community Helm chart for OpenShift</p>&mdash; Open in <a href="https://artifacthub.io/packages/helm/botpress/botpress">Artifact Hub</a></blockquote></div><script async src="https://artifacthub.io/artifacthub-widget.js"></script>
-<p>
 
 <br>
 
