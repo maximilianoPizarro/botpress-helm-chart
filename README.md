@@ -1,4 +1,5 @@
 # Deploy Botpress Server Community Helm Charts on Red Hat OpenShift
+<link rel="shortcut icon" type="image/png" href="https://artifacthub.io/static/media/placeholder_pkg_helm.png">
 <p align="left">
 <img src="https://img.shields.io/badge/redhat-CC0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Redhat">
 <img src="https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white" alt="kubernetes">
@@ -6,6 +7,14 @@
 <img src="https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="shell">
 <a href="https://www.linkedin.com/in/maximiliano-gregorio-pizarro-consultor-it"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin" /></a>
 <a href="https://artifacthub.io/packages/search?repo=botpress"><img src="https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/botpress" alt="Artifact Hub" /></a>
+</p>
+
+<h1> What is Botpress? </h1>
+<p align="left">
+Botpress is the standard developer stack to build, run, and improve conversational AI applications. Powered by natural language understanding, a messaging API, and a fully featured studio, Botpress allows developers and conversation designers around the globe to build remarkable chatbots without compromise.
+
+<a href='https://botpress.com/?utm_source=github&utm_medium=organic&utm_campaign=botpress_repo&utm_term=readme'><img src='.github/assets/studio.png'></a>
+
 </p>
 
 <p align="left">
@@ -17,12 +26,12 @@
   <img src="https://github.com/maximilianoPizarro/botpress-server-v12/blob/master/examples/image/Captura8.PNG?raw=true" width="900" title="Run On Openshift">  
 </p>
 <br>
-
+<p align="left">
 El propósito de este proyecto consiste en generar los objetos kubernetes en base a la imagen del nodo del repositorio oficial <a href="https://botpress.com">botpress</a> para el despliegue sobre las plataformas de contenedores por medio de la estrategía Helm Charts.
 
 Se verifico el funcionamiento en <a href="https://developers.redhat.com/developer-sandbox">Sandbox RedHat OpenShift Dedicated</a> (Openshift 4.14.1).
-
-
+</p>
+<p align="left">
 <table>
   <caption>
     Charts Values Parameters
@@ -51,22 +60,23 @@ Se verifico el funcionamiento en <a href="https://developers.redhat.com/develope
     </tr>
   </tbody>
 </table>
-
-<a> Add repository and Install</a>
+</p>
+<br>
+<h1> Add repository and Install</h1>
 <a href="https://maximilianopizarro.github.io/botpress-helm/">https://maximilianopizarro.github.io/botpress-helm/</a>
 <p>
 <ol>
  <li><b>helm repo add botpress https://maximilianopizarro.github.io/botpress-helm/</b></li>
- <li><b>helm install my-botpress botpress/botpress --version 0.1.0 --set route.host="Your-WilcardDNS-hostname",env.EXTERNAL_URL="Your-WilcardDNS-with-https"</b></li>
+ <li><b>helm install my-botpress botpress/botpress --version 0.1.0 <b>--set route.host="Your-WilcardDNS-hostname",env.EXTERNAL_URL="Your-WilcardDNS-with-https"</b></li>
 <li>Example: <b>helm install my-botpress botpress/botpress --version 0.1.0 --set route.host="my-botpress-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com",env.EXTERNAL_URL="https://my-botpress--maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com"</b></li>
 </ol>
 <br>
-<a> Uninstall </a>
+<h1> Uninstall </h1>
 <ol>
-<li>helm uninstall botpress-server </li>
+<li>helm uninstall my-botpress </li>
 </ol>
 
-<a> Package Info </a>
+<h1> Package Info </h1>
 
 <a href="https://github.com/maximilianoPizarro/botpress-helm">https://github.com/maximilianoPizarro/botpress-helm</a>
 
