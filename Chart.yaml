@@ -22,3 +22,16 @@ version: 0.1.2
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
 appVersion: "v12"
+
+sources:
+  - https://github.com/maximilianoPizarro/botpress-helm
+  - https://github.com/botpress/v12
+
+home: https://maximilianopizarro.github.io/botpress-helm/
+
+maintainers: # (optional)
+  - name: Maximiliano Pizarro
+    email: maximiliano.pizarro.5@gmail.com
+    url: http://www.linkedin.com/in/maximiliano-gregorio-pizarro-consultor-it
+
+icon: https://raw.githubusercontent.com/maximilianoPizarro/botpress-helm/main/botpress_fabicon.png
