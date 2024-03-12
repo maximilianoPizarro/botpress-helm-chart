@@ -1,5 +1,5 @@
 # Deploy Botpress Server Community Helm Charts on Red Hat OpenShift
-<link rel="icon" href="https://raw.githubusercontent.com/maximilianoPizarro/botpress-helm/main/favicon-152.ico" type="image/x-icon" >
+<link rel="icon" href="https://raw.githubusercontent.com/maximilianoPizarro/botpress-helm-chart/main/favicon-152.ico" type="image/x-icon" >
 <p align="left">
 <img src="https://img.shields.io/badge/redhat-CC0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Redhat">
 <img src="https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white" alt="kubernetes">
@@ -38,7 +38,7 @@ El propósito de este proyecto consiste en generar los objetos kubernetes en bas
 ## Add repository
 
 ```bash
-helm repo add botpress https://maximilianopizarro.github.io/botpress-helm/
+helm repo add botpress https://maximilianopizarro.github.io/botpress-helm-chart/
 ```
 
 ## Install Chart with parameters
@@ -61,8 +61,8 @@ helm uninstall my-botpress
 
 ## Package Info
 
-- [GitHub Page](https://maximilianopizarro.github.io/botpress-helm/)
-- [GitHub Repo](https://github.com/maximilianoPizarro/botpress-helm)
+- [GitHub Page](https://maximilianopizarro.github.io/botpress-helm-chart/)
+- [GitHub Repo](https://github.com/maximilianoPizarro/botpress-helm-chart)
 
 ## Package Steps
 
