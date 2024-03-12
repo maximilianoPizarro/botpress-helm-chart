@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Botpress Community Server Helm Chart</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="https://raw.githubusercontent.com/maximilianoPizarro/botpress-helm/main/favicon-152.ico" type="image/x-icon" >
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+<h1 id="deploy-botpress-server-community-helm-charts-on-red-hat-openshift">Deploy Botpress Server Community Helm Charts on Red Hat OpenShift</h1>
+<p><link rel="icon" href="https://raw.githubusercontent.com/maximilianoPizarro/botpress-helm/main/favicon-152.ico" type="image/x-icon" ></p>
+<p align="left">
+<img src="https://img.shields.io/badge/redhat-CC0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Redhat">
+<img src="https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white" alt="kubernetes">
+<img src="https://img.shields.io/badge/helm-0db7ed?style=for-the-badge&logo=helm&logoColor=white" alt="Helm">
+<img src="https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="shell">
+<a href="https://www.linkedin.com/in/maximiliano-gregorio-pizarro-consultor-it"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin" /></a>
+<a href="https://artifacthub.io/packages/search?repo=botpress"><img src="https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/botpress" alt="Artifact Hub" /></a>
+</p>
+
+<p align="left">
+  <img src="https://raw.githubusercontent.com/maximilianoPizarro/botpress-server-v12/master/examples/image/botpress-helm.PNG" width="900" title="Run On Openshift">
+    <img src="https://raw.githubusercontent.com/maximilianoPizarro/botpress-server-v12/master/examples/image/botpress-helm-install.PNG" width="900" title="Run On Openshift">
+</p>
+<p align="left">
+  <img src="https://github.com/maximilianoPizarro/botpress-server-v12/blob/master/examples/image/Captura7.PNG?raw=true" width="900" title="Run On Openshift">
+  <img src="https://github.com/maximilianoPizarro/botpress-server-v12/blob/master/examples/image/Captura8.PNG?raw=true" width="900" title="Run On Openshift"><br></p>
+
+<p align="left">
+El propósito de este proyecto consiste en generar los objetos kubernetes en base a la imagen del nodo del repositorio oficial <a href="https://botpress.com">botpress</a> para el despliegue sobre las plataformas de contenedores por medio de la estrategía Helm Charts. Se verifico el funcionamiento en <a href="https://developers.redhat.com/developer-sandbox">Sandbox RedHat OpenShift Dedicated</a> (Openshift 4.14.1).
+</p>
+
+<h1 id="instalation">Installation</h1>
+<h2 id="charts-values-parameters">Charts Values Parameters</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>env.EXTERNAL_URL</td>
+<td><a href="https://my-botpress-NAMESPACE-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com">https://my-botpress-NAMESPACE-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com</a></td>
+<td><a href="https://botpress-server-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com">https://botpress-server-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com</a></td>
+</tr>
+<tr>
+<td>route.host</td>
+<td>my-botpress-NAMESPACE-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com</td>
+<td>botpress-server-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com</td>
+</tr>
+<tr>
+<td>image.repository</td>
+<td>botpress/server</td>
+<td>quay.io/maximilianopizarro/botpress-server-v12</td>
+</tr>
+</tbody>
+</table>
+<h2 id="add-repository">Add repository</h2>
+<pre><code class="lang-bash">helm repo add botpress <span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>https://maximilianopizarro.github.io/botpress-helm/<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+</code></pre>
+<h2 id="install-chart-with-parameters">Install Chart with parameters</h2>
+<pre><code class="lang-bash"><span class="hljs-symbol">helm</span> install my-<span class="hljs-keyword">botpress </span><span class="hljs-keyword">botpress/botpress </span>--version <span class="hljs-number">0</span>.<span class="hljs-number">1</span>.<span class="hljs-number">0</span> --set route.host=<span class="hljs-string">"Your-WilcardDNS-hostname"</span>,env.EXTERNAL_URL=<span class="hljs-string">"Your-WilcardDNS-with-https"</span>
+</code></pre>
+<pre><code class="lang-bash"><span class="hljs-symbol">Example</span>:
+<span class="hljs-symbol">helm</span> install my-<span class="hljs-keyword">botpress </span><span class="hljs-keyword">botpress/botpress </span>--version <span class="hljs-number">0</span>.<span class="hljs-number">1</span>.<span class="hljs-number">0</span> &lt;<span class="hljs-keyword">b&gt;--set </span>route.host=<span class="hljs-string">"my-botpress-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com"</span>,env.EXTERNAL_URL=<span class="hljs-string">"https://my-botpress--maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com"</span>
+</code></pre>
+<h2 id="uninstall-chart">Uninstall Chart</h2>
+<pre><code class="lang-bash">helm uninstall <span class="hljs-keyword">my</span>-botpress
+</code></pre>
+<h2 id="package-info">Package Info</h2>
+<ul>
+<li><a href="https://maximilianopizarro.github.io/botpress-helm/">GitHub Page</a></li>
+<li><a href="https://github.com/maximilianoPizarro/botpress-helm">GitHub Repo</a></li>
+</ul>
+
+<h1 id="what-is-botpress-">What is Botpress?</h1>
+<p>Botpress is the standard developer stack to build, run, and improve conversational AI applications. Powered by natural language understanding, a messaging API, and a fully featured studio, Botpress allows developers and conversation designers around the globe to build remarkable chatbots without compromise.</p>
+<p>The fastest &amp; easiest way to get started with Botpress is by signing up for free to <strong><a href="https://sso.botpress.cloud/registration">Botpress Cloud</a></strong>. Alternatively, continue reading for more information about Botpress v12.</p>
+<p><strong>Out of the box, Botpress v12 includes:</strong></p>
+<ul>
+<li>Administration panel to orchestrate and monitor your chatbots</li>
+<li>Conversation Studio to design a conversation, manage content, code custom integration</li>
+<li>Easy integration with messaging channels (Messenger, WhatsApp, Slack, Teams, Webchat, Telegram, SMS &amp; more)</li>
+<li>Natural Language Understanding</li>
+<li>Complete list of features and specs <a href="https://v12.botpress.com/overview/features">here</a></li>
+</ul>
+<h2 id="getting-started">Getting Started</h2>
+<p>There are a few ways to get started with Botpress v12:</p>
+<ul>
+<li>Download the latest binary for your OS <a href="https://v12.botpress.com/">here</a> and follow the <a href="https://v12.botpress.com/overview/quickstart/installation">installation docs</a>.</li>
+<li>Use the official <a href="https://hub.docker.com/r/botpress/server">Docker image</a> and follow the <a href="https://v12.botpress.com/going-to-production/deploy/docker-compose">hosting docs</a></li>
+<li>Run from sources, follow <a href="https://v12.botpress.com/going-to-production/deploy/">build docs</a></li>
+<li><p>Deploy it in the cloud using these shortlinks:</p>
+<center>
+    <hr/>
+    <a href="https://marketplace.digitalocean.com/apps/botpress" class="btn btn-default btn-lg">
+            <img src=".github/do_button.svg">
+    </a>  &nbsp;
+    <a href="https://labs.play-with-docker.com?stack=https://raw.githubusercontent.com/botpress/v12/master/examples/docker-compose/docker-compose.yml" class="btn btn-default btn-lg">
+      <img src="https://cdn.jsdelivr.net/gh/play-with-docker/stacks@cff22438/assets/images/button.png">
+    </a> &nbsp;
+</center>
+
+</li>
+</ul>
+<h2 id="documentation">Documentation</h2>
+<ul>
+<li><a href="https://v12.botpress.com/">Main Documentation</a></li>
+<li><a href="https://botpress.com/reference/">SDK Reference</a></li>
+<li><a href="https://github.com/botpress/v12/tree/master/examples">Code Examples</a></li>
+<li><a href="https://www.youtube.com/c/botpress">Video Tutorials</a></li>
+</ul>
+<h2 id="community">Community</h2>
+<ul>
+<li><a href="https://discord.gg/botpress">Discord</a> - Get community support and find answers to your questions</li>
+<li><a href="https://github.com/botpress/v12/issues">Issues</a> - Report bugs and file feature requests</li>
+<li><a href="https://botpress.com/blog">Blog</a> - How to&#39;s, case studies, and announcements</li>
+<li><a href="/.github/CONTRIBUTING.md">Contributing</a> - Start contributing to Botpress</li>
+<li><a href="/.github/PARTNERS.md">Partners</a> - List of agencies who can help you with Botpress</li>
+</ul>
+<h2 id="license">License</h2>
+<p>Botpress is dual-licensed under <a href="/licenses/LICENSE_AGPL3">AGPLv3</a> and the <a href="/licenses/LICENSE_BOTPRESS">Botpress Proprietary License</a>.</p>
+<p>By default, any bot created with Botpress is licensed under AGPLv3, but you may change to the Botpress License from within your bot&#39;s web interface in a few clicks.</p>
+<p>For more information about how the dual-license works and why it works that way, please see the <a href="https://botpress.com/faq">FAQS</a>.</p>
+<p><img src="https://api.segment.io/v1/pixel/page?data=eyJ3cml0ZUtleSI6InczR0xQaGFwY1RqTjdZVnJZQVFYU05Wam9yVUFNOXBmIiwidXNlcklkIjoiYW5vbnltb3VzIn0=" alt=""></p>
+
+
+</body>
+</html>
+
