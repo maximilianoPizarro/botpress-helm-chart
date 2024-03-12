@@ -65,7 +65,7 @@ helm uninstall my-botpress
 ## Package Steps
 
 ```bash
-helm package . -d .
+helm package . -d charts
 helm repo index .
 ```
 
