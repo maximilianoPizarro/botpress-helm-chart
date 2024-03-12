@@ -3,9 +3,9 @@ entries:
   botpress:
   - apiVersion: v2
     appVersion: v12
-    created: "2024-03-12T16:03:34.928430617Z"
+    created: "2024-03-12T16:09:16.275052001Z"
     description: A Botpress Community Helm chart for OpenShift
-    digest: d352b1ba0afa3513123ed09433299c819c1cb82c9832f8ac53ec4a8132c00ecc
+    digest: d5b79b5f85a087da326252a0d75e55de1a5cc24d4eadc348eb4ae27053c94346
     home: https://maximilianopizarro.github.io/botpress-helm-chart/
     icon: https://raw.githubusercontent.com/maximilianoPizarro/botpress-helm-chart/main/botpress_fabicon.png
     maintainers:
@@ -19,7 +19,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: v12
-    created: "2024-03-12T16:03:34.645789338Z"
+    created: "2024-03-12T16:09:15.960743222Z"
     description: A Botpress Community Helm chart for OpenShift
     digest: db2b3b056356557008b9718d2f7bf7f22b3e5aa1f9cba28600caa1bdeb0abacd
     home: https://maximilianopizarro.github.io/botpress-helm/
@@ -35,7 +35,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: v12
-    created: "2024-03-12T16:03:34.566135279Z"
+    created: "2024-03-12T16:09:15.924524487Z"
     description: A Botpress Community Helm chart for OpenShift
     digest: 09bc5a3bdeafa9be29dfc0082163a9befdcece2c998ad9ebda02bfa7566b5ea5
     name: botpress
@@ -45,7 +45,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: v12
-    created: "2024-03-12T16:03:34.561538792Z"
+    created: "2024-03-12T16:09:15.920201919Z"
     description: A Botpress Community Helm chart for OpenShift
     digest: c139bfef8be8c9d1c03af675ff64417d31347ddb3fcbe898e37ee2dbe5a48014
     name: botpress
@@ -53,4 +53,4 @@ entries:
     urls:
     - charts/botpress-0.1.0.tgz
     version: 0.1.0
-generated: "2024-03-12T16:03:34.559448697Z"
+generated: "2024-03-12T16:09:15.918309427Z"
