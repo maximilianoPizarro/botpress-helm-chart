@@ -44,12 +44,12 @@ helm repo add botpress https://maximilianopizarro.github.io/botpress-helm/
 ## Install Chart with parameters
 
 ```bash
-helm install my-botpress botpress/botpress --version 0.1.2 --set route.host="Your-WilcardDNS-hostname",env.EXTERNAL_URL="Your-WilcardDNS-with-https"
+helm install my-botpress botpress/botpress --version VERSION --set route.host="Your-WilcardDNS-hostname",env.EXTERNAL_URL="Your-WilcardDNS-with-https"
 ```
 
 ```bash
 Example:
-helm install my-botpress botpress/botpress --version 0.1.2 --set route.host="my-botpress-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com",env.EXTERNAL_URL="https://my-botpress--maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com"
+helm install my-botpress botpress/botpress --version 0.1.3 --set route.host="my-botpress-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com",env.EXTERNAL_URL="https://my-botpress--maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com"
 ```
 
 
