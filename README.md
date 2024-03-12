@@ -10,6 +10,7 @@
 </p>
 
 <p align="left">
+  <img src="https://raw.githubusercontent.com/maximilianoPizarro/botpress-helm-chart/main/botpress-helm.png" width="900" title="Run On Openshift">
   <img src="https://raw.githubusercontent.com/maximilianoPizarro/botpress-server-v12/master/examples/image/botpress-helm.PNG" width="900" title="Run On Openshift">
     <img src="https://raw.githubusercontent.com/maximilianoPizarro/botpress-server-v12/master/examples/image/botpress-helm-install.PNG" width="900" title="Run On Openshift">
   <img src="https://raw.githubusercontent.com/maximilianoPizarro/botpress-server-v12/master/examples/image/botpress-helm-install-devcatalog.PNG" width="900" title="Run On Openshift">
