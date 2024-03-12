@@ -36,7 +36,7 @@ El propósito de este proyecto consiste en generar los objetos kubernetes en bas
 ## Add repository
 
 ```bash
-helm repo add botpress <b>https://maximilianopizarro.github.io/botpress-helm/</b></li>
+helm repo add botpress https://maximilianopizarro.github.io/botpress-helm/</li>
 ```
 
 ## Install Chart with parameters
