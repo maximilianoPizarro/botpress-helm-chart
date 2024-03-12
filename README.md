@@ -12,6 +12,8 @@
 <p align="left">
   <img src="https://raw.githubusercontent.com/maximilianoPizarro/botpress-server-v12/master/examples/image/botpress-helm.PNG" width="900" title="Run On Openshift">
     <img src="https://raw.githubusercontent.com/maximilianoPizarro/botpress-server-v12/master/examples/image/botpress-helm-install.PNG" width="900" title="Run On Openshift">
+  <img src="https://raw.githubusercontent.com/maximilianoPizarro/botpress-server-v12/master/examples/image/botpress-helm-install-devcatalog.PNG" width="900" title="Run On Openshift">
+  <img src="https://raw.githubusercontent.com/maximilianoPizarro/botpress-server-v12/master/examples/image/botpress-helm-install-devcatalog-2.PNG" width="900" title="Run On Openshift">      
 </p>
 <p align="left">
   <img src="https://github.com/maximilianoPizarro/botpress-server-v12/blob/master/examples/image/Captura7.PNG?raw=true" width="900" title="Run On Openshift">
@@ -42,12 +44,12 @@ helm repo add botpress https://maximilianopizarro.github.io/botpress-helm/
 ## Install Chart with parameters
 
 ```bash
-helm install my-botpress botpress/botpress --version 0.1.0 --set route.host="Your-WilcardDNS-hostname",env.EXTERNAL_URL="Your-WilcardDNS-with-https"
+helm install my-botpress botpress/botpress --version 0.1.2 --set route.host="Your-WilcardDNS-hostname",env.EXTERNAL_URL="Your-WilcardDNS-with-https"
 ```
 
 ```bash
 Example:
-helm install my-botpress botpress/botpress --version 0.1.0 --set route.host="my-botpress-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com",env.EXTERNAL_URL="https://my-botpress--maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com"
+helm install my-botpress botpress/botpress --version 0.1.2 --set route.host="my-botpress-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com",env.EXTERNAL_URL="https://my-botpress--maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com"
 ```
 
 
