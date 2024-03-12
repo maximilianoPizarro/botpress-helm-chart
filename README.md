@@ -36,7 +36,7 @@ El propósito de este proyecto consiste en generar los objetos kubernetes en bas
 ## Add repository
 
 ```bash
-helm repo add botpress https://maximilianopizarro.github.io/botpress-helm/</li>
+helm repo add botpress https://maximilianopizarro.github.io/botpress-helm/
 ```
 
 ## Install Chart with parameters
@@ -47,7 +47,7 @@ helm install my-botpress botpress/botpress --version 0.1.0 --set route.host="You
 
 ```bash
 Example:
-helm install my-botpress botpress/botpress --version 0.1.0 <b>--set route.host="my-botpress-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com",env.EXTERNAL_URL="https://my-botpress--maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com"
+helm install my-botpress botpress/botpress --version 0.1.0 --set route.host="my-botpress-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com",env.EXTERNAL_URL="https://my-botpress--maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com"
 ```
 
 
@@ -91,17 +91,7 @@ There are a few ways to get started with Botpress v12:
 - Download the latest binary for your OS [here](https://v12.botpress.com/) and follow the [installation docs](https://v12.botpress.com/overview/quickstart/installation).
 - Use the official [Docker image](https://hub.docker.com/r/botpress/server) and follow the [hosting docs](https://v12.botpress.com/going-to-production/deploy/docker-compose)
 - Run from sources, follow [build docs](https://v12.botpress.com/going-to-production/deploy/)
-- Deploy it in the cloud using these shortlinks:
 
-  <center>
-      <hr/>
-      <a href="https://marketplace.digitalocean.com/apps/botpress" class="btn btn-default btn-lg">
-              <img src=".github/do_button.svg">
-      </a>  &nbsp;
-      <a href="https://labs.play-with-docker.com?stack=https://raw.githubusercontent.com/botpress/v12/master/examples/docker-compose/docker-compose.yml" class="btn btn-default btn-lg">
-        <img src="https://cdn.jsdelivr.net/gh/play-with-docker/stacks@cff22438/assets/images/button.png">
-      </a> &nbsp;
-  </center>
 
 ## Documentation
 
