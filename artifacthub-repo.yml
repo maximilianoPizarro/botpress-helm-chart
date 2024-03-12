@@ -9,7 +9,7 @@
 # when the hash of the last commit in the branch you set up changes. This does
 # NOT apply to ownership claim operations, which are processed immediately.
 #
-repositoryID: https://maximilianopizarro.github.io/botpress-helm/
+repositoryID: 0c65a1db-453f-497a-bf20-d19608729007
 owners: # (optional, used to claim repository ownership)
   - name: maximiliano.pizarro.5
     email: maximiliano.pizarro.5@gmail.com
