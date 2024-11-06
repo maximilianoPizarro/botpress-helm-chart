@@ -52,7 +52,7 @@ helm install my-botpress botpress/botpress --version VERSION --set route.host="Y
 
 ```bash
 Example:
-helm install my-botpress botpress/botpress --version 0.1.3 --set route.host="my-botpress-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com",env.EXTERNAL_URL="https://my-botpress--maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com"
+helm install my-botpress botpress/botpress --version 0.1.1 --set route.host="my-botpress-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com",env.EXTERNAL_URL="https://my-botpress-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com"
 ```
 
 
@@ -70,7 +70,7 @@ helm uninstall my-botpress
 ## Package Steps
 
 ```bash
-helm package . -d charts
+helm package -u . -d charts
 helm repo index .
 ```
 
