@@ -6,7 +6,6 @@ metadata:
   labels:
     {{- include "botpress.labels" . | nindent 4 }}
 spec:
-  host: {{ .Values.route.host }}
   to:
     kind: Service
     name: {{ include "botpress.fullname" . }}
