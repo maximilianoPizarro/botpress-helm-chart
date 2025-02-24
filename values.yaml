@@ -52,7 +52,7 @@ containerSecurityContext:
 env:
   BP_CONFIG_HTTPSERVER_HOST: 0.0.0.0
   BP_MODULE_NLU_DUCKLINGURL: http://localhost:8000
-  EXTERNAL_URL: https://botpress-server-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com
+  EXTERNAL_URL: https://botpress-server-maximilianopizarro5-dev.apps.rm2.thpm.p1.openshiftapps.com
   BP_PRODUCTION: true
 
 service:
@@ -61,7 +61,7 @@ service:
 
 route:
   enabled: true  
-  host: botpress-server-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com
+  host: botpress-server-maximilianopizarro5-dev.apps.rm2.thpm.p1.openshiftapps.com
 
 ingress:
   enabled: false
@@ -70,7 +70,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: botpress-server-maximilianopizarro5-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com
+    - host: botpress-server-maximilianopizarro5-dev.apps.rm2.thpm.p1.openshiftapps.com
       paths:
         - path: /
           pathType: ImplementationSpecific

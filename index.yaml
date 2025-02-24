@@ -1,20 +1,28 @@
 apiVersion: v1
 entries:
   botpress:
-  - apiVersion: v2
+  - annotations:
+      charts.openshift.io/name: Botpress Server v12
+    apiVersion: v2
     appVersion: botpress-server-v12
-    created: "2024-11-06T21:16:20.921477774Z"
+    created: "2025-02-24T12:42:11.6674554-03:00"
     description: A Botpress Community Helm chart for OpenShift
-    digest: d5ff1e6a5396c12996d73fc9e108720a50ddfe4975f57728435c493283bf871c
+    digest: 35a28ff8ed079540491ed8e8e79e27083aeae5caeffe9c0fbd9b0a8318dd746a
     home: https://maximilianopizarro.github.io/botpress-helm-chart/
     icon: https://raw.githubusercontent.com/maximilianoPizarro/botpress-helm-chart/main/botpress_fabicon.png
+    keywords:
+    - botpress
+    - nodejs
+    kubeVersion: '>=1.20.0'
     maintainers:
     - email: maximiliano.pizarro.5@gmail.com
       name: Maximiliano Pizarro
       url: http://www.linkedin.com/in/maximiliano-gregorio-pizarro-consultor-it
     name: botpress
+    sources:
+    - https://github.com/maximilianoPizarro/botpress-helm-chart
     type: application
     urls:
     - charts/botpress-0.1.1.tgz
     version: 0.1.1
-generated: "2024-11-06T21:16:20.917834526Z"
+generated: "2025-02-24T12:42:11.6634454-03:00"
